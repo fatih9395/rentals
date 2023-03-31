@@ -10,7 +10,8 @@ router.get('/', (req, res, ) => {
 router.get('/about', (req, res,) => {
   let date = new Date();
   res.render('about',{
-    date: date
+    date: date,
+    title: 'About'
   });
 });  
 

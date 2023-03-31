@@ -1,8 +1,23 @@
+/* Changing the Font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&display=swap');
+
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 a {
   color: #00B7FF;
+}
+
+/* padding foe main section */
+main {
+  padding: 25px;
+}
+
+.navbar-dark {
+  background-color: #A50044;
+}
+h1 {
+  color: #D87722;
 }
