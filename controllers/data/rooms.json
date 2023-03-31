@@ -1,13 +1,14 @@
-{
-    "rooms": [
-        {"Adress": "44 Madawaska Avenue, North York9",
-        "RoomType": "Flex Room", "Price": "$900" },
-
-        {"Adress": "24 Athabaska Avenue, North York",
-        "RoomType": "Master Room", "Price": "$1200" },
-
-        {"Adress": "96 Finch Avenue East, North York,",
-        "RoomType": "Deluxe Room", "Price": "$1100" }
-        
-    ]
-}
+[
+    {
+        "name": "44 Odin Avenue, North York"
+    },
+    {
+        "name": "26 Loki Avenue, North York"
+    },
+    {
+        "name": "96 Ragnar St East, Oakville"
+    },
+    {
+        "name": "13 Valhalla St, Barrie"
+    }
+]   
