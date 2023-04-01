@@ -1,6 +1,20 @@
 <h1>Rental Housing List</h1>
-<ul>
-    {{#each rooms}}
-        <li>{{this.name}}</li>
-    {{/each}}
-</ul>
+<a href="/rooms/create">Add a New Room</a>
+<table class="table table-striped table-hover">
+    <thead>
+        <th>Address</th>
+        <th>City</th>
+        <th>Room Type</th>
+        <th>Price</th>
+    </thead>
+    <tbody>
+        {{#each rooms}}
+        <tr>
+            <td>{{this.address}}</td>
+            <td>{{this.city}}</td>
+            <td>{{this.roomType}}</td>
+            <td>{{this.price}}</td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>

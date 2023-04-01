@@ -1,14 +1,14 @@
 [
     {
-        "name": "44 Odin Avenue, North York"
+        "rooms": "44 Odin Avenue, North York"
     },
     {
-        "name": "26 Loki Avenue, North York"
+        "rooms": "26 Loki Avenue, North York"
     },
     {
-        "name": "96 Ragnar St East, Oakville"
+        "rooms": "96 Ragnar St East, Oakville"
     },
     {
-        "name": "13 Valhalla St, Barrie"
+        "rooms": "13 Valhalla St, Barrie"
     }
 ]   

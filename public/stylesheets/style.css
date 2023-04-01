@@ -26,3 +26,35 @@ h1 {
 .nav-link {
   color: #1C2C5B;
 }
+
+fieldset{
+  border: none;
+  margin: 5px;
+}
+label{
+  width: 130px;
+}
+
+fieldset {
+  border: none;
+  margin: 5px;
+}
+
+label {
+  width: 130px;
+}
+
+thead {
+  color: #b7e60c;
+  background-color: #063672;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color:#A50044;
+  color: #00B7FF;
+  text-align: center;
+}

@@ -1,0 +1,29 @@
+<h1>Details of Our Rooms</h1>
+<form method="post">
+    <fieldset>
+        <label for="address:">Address: *</label>
+        <textarea name="address" id="address" required></textarea>
+        </fieldset>
+    <fieldset>
+        <label for="city">City: *</label>
+        <select name="city" id="city" required>
+            {{#each cities}}
+                <option>{{this.name}}</option>
+            {{/each}}
+        </select>
+        </fieldset>
+    <fieldset>
+        <label for="roomType">Room Type: *</label>
+        <input type="text" name="roomType" id="roomType" />
+        </fieldset>
+    <fieldset>
+        <label for="price">Price: *</label>
+        <input type="number" min="500" name="price" id="price" required/>
+        </fieldset>
+    <fieldset>
+        <label for="comments">Comments: </label>
+        <textarea name="comments" id="comments"></textarea>
+        </fieldset>
+        <button class="'btn btn-secondary offset-1">Save</button>
+    
+</form>
