@@ -7,6 +7,9 @@ const router = express.Router();
 const Room= require('../models/room')
 const City = require('../models/city');
 
+//Making our method private with global outh check
+const global = require('../controllers/globalFunctions');
+
 
 router.get('/', (req, res) => {
    
@@ -41,7 +44,8 @@ router.get('/', (req, res) => {
 
 
 //Get method to display form to add a room
-router.get('/create',(req,res)=>{
+//checking user logged in to create
+router.get('/create',global.isAuthenticated,(req,res)=>{
     City.find((err, cities) =>{
         if(err) {
             console.log(err);
@@ -57,7 +61,7 @@ router.get('/create',(req,res)=>{
 });
 //post/create to submit the form to mongodb
 
-router.post('/create',(req,res)=>{
+router.post('/create',global.isAuthenticated, (req,res)=>{
     Room.create(req.body, (err, newDocument)=>{
         if(err){
             console.log(err);

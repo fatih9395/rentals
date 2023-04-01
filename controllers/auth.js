@@ -47,4 +47,14 @@ router.post('/login', passport.authenticate('local',{
     failureRedirect: '/auth/login',
     failureMessage: 'Invalid Login',
 }));
+//logout 
+router.get('/logout', (req, res) => {
+    req.session.messages = [];
+    req.logout((err) => {
+        if (err) {
+            console.log(err)
+        }
+        res.redirect('/');
+    })
+})
 module.exports = router;
